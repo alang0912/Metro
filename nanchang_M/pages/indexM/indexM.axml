@@ -1,0 +1,47 @@
+<view class="index-contain">
+  <!-- <view class="input-outer">
+    <icon class="input-icon" size="20" color="#B6B6B6" type="search"></icon>
+    <input class="input-search" 
+      placeholder-class="holder-class" 
+      type="text"
+      confirm-type="search"
+      onFocus="searchLine"
+      placeholder="搜索站点、线路" />
+  </view> -->
+  <view>
+    <image class="LogoImage" onTap="searchLine" mode="scaleToFill" src="{{TitleBarImg}}"/>
+  </view>
+  <image class="inputImage" onTap="searchLine" mode="scaleToFill" src="../../assets/image/searchImage.png"/>
+  <view class="choose">
+    <text class="choose-text" onTap="previewImage">线路图</text>
+    <text class="choose-text" onTap="getLocation">我的位置</text>
+  </view>
+  <view class="line-list"
+      a:for="{{Linelist}}" 
+      a:key="name" 
+      a:for-item="item" >
+    <view class="for-list"       
+      a:if="{{item.ad == false}}"
+      data-id="{{item.id}}"
+      onTap="goToDetail">
+      <!-- <view class="line-num" style="background:{{item.bgcolor}}">
+        <text class="line-name" style="background:{{item.color}}">{{item.num}}</text>
+        <text class="line-text" style="color:{{item.color}}">号线</text>
+      </view> -->
+      <view class="line-show">
+        <view class="line-num" style="color:{{item.color}};background:{{item.bgColor}};">{{item.name}}</view>
+        <view class="line-status" a:if="{{item.status == 2}}">尚未开通</view>
+      </view>      
+      <view class="line-detail"> 
+        <view class="detail-left">
+          <view>起始站：<text class="left-start">{{item.startStation}}</text></view>
+          <view class="left2">终点站：<text class="left-end">{{item.stopStation}}</text></view>
+        </view>
+        <view class="detail-right">{{item.startTime}}-{{item.endTime}}</view>
+      </view>
+    </view>
+    <view a:if="{{item.ad == true}}">
+      <image class="ad-img" onTap="goToAD" data-link="{{item.link}}" mode="scaleToFill" src="{{item.imgUrl}}"/>
+    </view>
+  </view>
+</view>

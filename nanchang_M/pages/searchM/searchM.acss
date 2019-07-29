@@ -1,0 +1,96 @@
+.search-container{
+  padding-top: 1rpx;
+}
+/* 带取消搜索框 */
+.search{
+  display: flex;
+  margin: 30rpx;
+}
+.input-outer{
+  flex: 9;
+  width: 630rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-radius: 35rpx;
+  background: #FFFFFF;
+}
+.input-icon{
+  position: relative;
+  left: 30rpx;
+  top: 8rpx;
+}
+.input-search{
+  margin-left: 40rpx;
+  position: relative;
+  left: 0;
+  top: 2rpx;
+  width: 470rpx;
+  height: 60rpx;
+  background: #FFFFFF;
+}
+.holder-class{
+  font-size: 28rpx;
+  color: #B6B6B6;
+}
+.cancer{
+  margin-top: 10rpx;
+  flex: 1;
+  font-size: 28rpx;
+  color: #5D5D5D;
+  padding: 10rpx;
+  letter-spacing: 3rpx;
+}
+
+/* 无搜索结果 */
+.no-data{
+ text-align: center;
+}
+.nodata-image{
+  margin-top: 30%;
+  width: 252rpx;
+  height: 184rpx;
+}
+.nodata-text{
+  margin-top: 30rpx;
+  font-size: 28rpx;
+  color: #999999;
+}
+
+/* 有搜索结果 */
+.search-for{
+  margin: 30rpx;
+  padding: 30rpx 20rpx;
+  box-sizing: border-box;
+  width: 690rpx;
+  height: 157rpx;
+  background: #FFFFFF;
+  border-radius: 10rpx;
+}
+.searchtop{
+  display: flex;
+}
+.search-linename{
+  flex: 1;
+  text-align: right;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.search-title{
+  margin-bottom: 25rpx;
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #333333;
+}
+.search-text{
+  display: flex;
+  font-size: 28rpx;
+  color: #666666;
+}
+.line-left{
+  flex: 1;
+}
+.time-right{
+  flex: 1;
+  text-align: right;
+}
+

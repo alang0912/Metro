@@ -1,0 +1,34 @@
+<view class="detail-content">
+  <view class="for-list">
+    <view class="line-num" style="color:{{LineDetail.color}};background:{{LineDetail.bgColor}}" style="background:{{LineDetail.bgcolor}}">
+      {{LineDetail.name}}
+      <!-- <text class="line-name" style="background:{{LineDetail.color}}">{{LineDetail.num}}</text>
+      <text class="line-text" style="color:{{LineDetail.color}}">号线</text> -->
+    </view>
+    <view class="line-detail"> 
+      <view class="detail-left">
+        <view>起始站：<text class="left-start">{{LineDetail.startStation}}</text></view>
+        <view class="left2">终点站：<text class="left-end">{{LineDetail.stopStation}}</text></view>
+      </view>
+      <view class="detail-right">{{LineDetail.startTime}}-{{LineDetail.endTime}}</view>
+    </view>
+  </view>
+
+  <view class="change-direct">
+    <text class="direct-text" onTap="changeForward">切换正向</text>
+    <text class="direct-text" onTap="changeReverse">切换反向</text>
+  </view>
+
+  <view class="stations">
+    <view class="stations-list"
+      a:for="{{Stations}}" 
+      a:key="name" 
+      a:for-item="item" 
+      data-id="{{item.id}}">
+      <view class="station-left">{{item.num}}.{{item.aliasName}}
+        <text a:if="{{item.transfer}}">（{{item.transfer}}）</text>
+      </view>
+      <view class="station-right">{{item.startTime}}-{{item.endTime}}</view>
+    </view>
+  </view>
+</view>

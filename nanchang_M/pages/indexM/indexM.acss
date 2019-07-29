@@ -1,0 +1,129 @@
+.index-contain{
+  padding-top: 1rpx;
+  box-sizing: border-box;
+}
+
+.LogoImage{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 750rpx;
+  height: 140rpx;
+}
+
+.inputImage{
+  margin: 170rpx 30rpx 30rpx 30rpx;
+  width: 690rpx;
+  height: 70rpx;
+}
+/* 搜索框 */
+.input-outer{
+  margin: 30rpx;
+  width: 690rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-radius: 35rpx;
+  background: #FFFFFF;
+}
+.input-icon{
+  position: relative;
+  left: 30rpx;
+  top: 8rpx;
+}
+.input-search{
+  margin-left: 40rpx;
+  position: relative;
+  left: 0;
+  top: 2rpx;
+  width: 560rpx;
+  height: 60rpx;
+  background: #FFFFFF;
+}
+.holder-class{
+  font-size: 28rpx;
+  color: #B6B6B6;
+}
+
+/* 路线 */
+.choose{
+  margin: 30rpx 30rpx 30rpx 30rpx;
+}
+.choose-text{
+  margin-right: 20rpx;
+  padding: 10rpx 20rpx;
+  font-size: 28rpx;
+  color: #1E2F89;
+  background: #EAEEFF;
+  border-radius: 30px;
+}
+.for-list{
+  margin: 30rpx;
+  padding: 30rpx 20rpx;
+  box-sizing: border-box;
+  width: 690rpx;
+  height: 200rpx;
+  background: #FFFFFF;
+  border-radius: 10rpx;
+}
+.line-show{
+  display: flex;
+}
+.line-num{
+  display: inline-block;
+  padding:6rpx 28rpx;
+  font-weight: 600; 
+  border-radius: 30rpx;
+}
+.line-status{
+  margin-right: 20rpx;
+  flex: 1;
+  text-align: right;
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #666666;
+}
+.line-name{
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  border-radius: 20rpx;
+  color: #FFFFFF;
+  font-size: 28rpx;
+}
+.line-text{
+  margin-left: 5rpx;
+  position: relative;
+  top: 2rpx;
+  font-size: 28rpx;
+  color: #D41C27;
+}
+.line-detail{
+  margin: 25rpx 0 0 20rpx;
+  display: flex;
+  font-size: 28rpx;
+}
+.detail-left{
+  flex: 2;
+  color: #595959;
+}
+.detail-right{
+  flex:1;
+  text-align: right;
+  margin: 20rpx 20rpx 0 0;
+  color: #151515;
+}
+.left-start,.left-end{
+  color: #151515;
+}
+.left2{
+  margin-top: 8rpx;
+}
+
+/* 广告位 */
+.ad-img{
+  margin: 0 30rpx;
+  width: 690rpx;
+  height: 200rpx;
+}

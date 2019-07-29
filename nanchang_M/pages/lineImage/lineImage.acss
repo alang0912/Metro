@@ -1,0 +1,7 @@
+/* .img{
+  text-align: center;
+} */
+.image-style{
+  width: 750rpx;
+  height: 561rpx;
+}

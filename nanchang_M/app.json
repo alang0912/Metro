@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/indexM/indexM",
+    "pages/searchM/searchM",
+    "pages/lineImage/lineImage",
+    "pages/lineDetail/lineDetail",
+    "pages/web-view/web-view"
+  ],
+  "window": {
+    "defaultTitle": "",
+    "titleBarColor": ""
+  }
+}

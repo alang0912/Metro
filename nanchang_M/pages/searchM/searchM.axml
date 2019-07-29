@@ -1,0 +1,36 @@
+<view class="search-container">
+  <view class="search">
+    <view class="input-outer">
+      <icon class="input-icon" size="20" color="#B6B6B6" type="search"></icon>
+      <input class="input-search" 
+        placeholder-class="holder-class" 
+        type="text"
+        focus="true"
+        confirm-type="search"
+        onConfirm="getInputval"/>
+    </view>
+    <text class="cancer" onTap="GotoIndex">取消</text>
+  </view>
+  <view a:if="{{Searchlist.length==0}}" class="no-data">
+    <image class="nodata-image" mode="scaleToFill" src="../../assets/image/search3.png"/>
+    <view class="nodata-text">搜索不到任何结果哦</view>
+  </view>
+  <view a:if="{{Searchlist[0].name != 'aa'&& Searchlist.length!=0}}" class="search-list">
+    <view class="search-for" 
+      a:for="{{Searchlist}}" 
+      a:key="id"
+      a:for-item="item"
+      data-id="{{item.lineId}}"
+      onTap="gotoDetail">
+      <view class="searchtop">
+        <view class="search-title">{{item.aliasName}}，第{{item.num}}站</view>
+        <view class="search-linename">{{item.transfer}}</view>
+      </view>
+      <view class="search-text">
+        <view class="line-left" style='color:{{item.lineColor}}'>{{item.lineName}}</view>
+        <view class="time-right">{{item.startTime}}-{{item.endTime}}</view>
+      </view>
+    </view>
+  </view>
+
+</view>

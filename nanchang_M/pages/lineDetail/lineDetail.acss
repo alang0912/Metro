@@ -1,0 +1,100 @@
+.detail-content{
+  padding-top: 1rpx;
+  box-sizing: border-box;
+}
+.for-list{
+  margin: 30rpx;
+  padding: 30rpx 20rpx;
+  box-sizing: border-box;
+  width: 690rpx;
+  height: 200rpx;
+  background: #FFFFFF;
+  border-radius: 10rpx;
+}
+.line-num{
+  display: inline-block;
+  padding:6rpx 28rpx;
+  font-weight: 600; 
+  border-radius: 30rpx;
+}
+.line-name{
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  border-radius: 20rpx;
+  color: #FFFFFF;
+  font-size: 28rpx;
+}
+.line-text{
+  margin-left: 5rpx;
+  position: relative;
+  top: 2rpx;
+  font-size: 28rpx;
+  color: #D41C27;
+}
+.line-detail{
+  margin: 25rpx 0 0 20rpx;
+  display: flex;
+  font-size: 28rpx;
+}
+.detail-left{
+  flex: 2;
+  color: #595959;
+}
+.detail-right{
+  flex:1;
+  text-align: right;
+}
+.left-start,.left-end{
+  color: #151515;
+}
+.left2{
+  margin-top: 8rpx;
+}
+.detail-right{
+  margin: 20rpx 20rpx 0 0;
+  color: #151515;
+}
+
+/* 切换方向 */
+.change-direct{
+  margin: 40rpx 30rpx 30rpx 30rpx;
+}
+.direct-text{
+  margin-right: 20rpx;
+  display: inline-block;
+  width: 152rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border-radius: 30rpx;
+  background: #EAEEFF;
+  font-size: 28rpx;
+  color: #2C3C90;
+}
+.stations{
+  margin: 30rpx;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border-radius: 10rpx;
+}
+.stations-list{
+  display: flex;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  color: #666666;
+  border-bottom: 1rpx solid #EDEDED;
+}
+.stations view:last-child {
+  border-bottom: none;
+}
+.station-right{
+  flex: 1;
+  text-align: right;
+  font-size: 28rpx;
+  color: #C3C3C3;
+}

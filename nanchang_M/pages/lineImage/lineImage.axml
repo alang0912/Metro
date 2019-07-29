@@ -1,0 +1,9 @@
+<!-- <view class="img" onTouchStart="touchstartCallback"  onTouchMove="touchmoveCallback" onTouchEnd="touchendCallback"  >
+    <image style="transform:translate({{stv.offsetX}}rpx, {{stv.offsetY}}rpx) scale({{stv.scale}});" 
+    src="{{ImageUrl}}"
+    onResize="onResize"></image>
+</view> -->
+<view>
+  <image class="image-style" src="{{ImageUrl}}"></image>
+  <button size="default" type="primary" onTap="previewImage">预览路线图</button>
+</view>
